@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>E-Commerce Navbar</title>
+            <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <title>Document</title>
 </head>
-
 <body class="bg-gray-100">
-
-    <div class="lg:w-full lg:h-full md:w-full md:h-full sm:w-full sm:h-full">
+   <div class="lg:w-full lg:h-full md:w-full md:h-full sm:w-full sm:h-full">
 
     
 
@@ -21,7 +19,7 @@
 
 
             <div class="flex items-center gap-5">
-                <img src="Images/logo.png" alt="Logo" class="w-10 h-10 object-cover rounded-full">
+                <img src="../assests/Images/logo.png" alt="Logo" class="w-10 h-10 object-cover rounded-full">
                 <h1 class="text-2xl font-bold text-white">E-Commerce</h1>
             </div>
 
@@ -32,7 +30,7 @@
           <i class="fa-solid fa-bars text-white text-3xl" ></i>
       </button>
             <ul class="hidden md:flex flex-col md:flex-row md:items-center w-full md:w-auto mt-4 md:mt-0 gap-6 text-white text-lg">
-                <li><a href="index.html" class="hover:text-blue-800 transition-all duration-200">Home</a></li>
+                <li><a href="../index.html" class="hover:text-blue-800 transition-all duration-200">Home</a></li>
                 <li><a href="About.html" class="hover:text-blue-800 transition-all duration-200">About</a></li>
                 <li><a href="Contact.html" class="hover:text-blue-800 transition-all duration-200">Contact</a></li>
             </ul>
@@ -43,70 +41,89 @@
                     class="w-10 h-10 object-cover rounded-full bg-white p-1 hover:scale-105 transition-transform duration-200">
                 <img src="Images/viewcart.jpg" alt="Cart"
                     class="w-10 h-10 object-cover rounded-full bg-white p-1 hover:scale-105 transition-transform duration-200"> -->
-                   <a href="/CartView.html"><div> <i class=" fa-solid fa-bag-shopping text-amber-100 text-4xl sm:flex hidden"></i></div></a>
+                  <a href="CartView.html"><div> <i class=" fa-solid fa-bag-shopping text-amber-100 text-4xl sm:flex hidden"></i></div></a>
                   <a href="WishList.html">  <div>  <i class="fa-solid fa-cart-shopping text-amber-100 text-4xl"></i></div>
                   </a>
-                    <a href="AdminDashboard.html">
-                    <button
+               
+                    <a href="Dashboard.html"><button
                     class="bg-blue-800 text-white  px-5 py-3 rounded-xl hover:bg-blue-600 hover:text-white transition-colors duration-200">
                     Admin Dashboard
                 </button>
-                </a>
+                    </a>
             </div>
 
         </div>
     </nav>
 
 
+   <div class="w-full h-full">
+         <div class="flex flex-col mt-5 justify-center items-center gap-6 w-full  ">
+            <div class="w-[60%]   h-256 px-6 flex justify-start flex-col gap-5 bg-white hover:shadow-2xl  mt-2 py-5 border border-gray-100">
+            <h2 class="text-3xl  font-bold text-gray-900">Help & Support</h2>
+            <p class="text-gray-700">We're here to assist you with any questions, issues, or feedback you may have about your shopping experience on <b>E-Commerce</b></p>
+        
+            <div >
+                <h1 class="font-semibold text-xl text-gray-900"> Frequently Asked Questions</h1>
+                <ul class="list-disc pl-6 text-gray-600 flex gap-1 flex-col mt-2">
+                     <li class="font-bold">How do I track my order?</li>
+                     <p>You can track your order in the “My Orders” section of your account. You’ll also receive email updates.
+                        </p>
+                     <li class="font-bold pt-2">What is your return policy?</li>
+                     <p>We accept returns within 7 days of delivery. Please visit our Return Policy page for details.
+                        </p>
+                     <li class="font-bold pt-2">Can I cancel my order?</li>
+                     <p>Orders can be canceled within 1 hour of placing them. After that, they may already be in the shipping process.
+                        </p>
+                        <li class="font-bold pt-2">What payment methods are accepted?</li>
+                        <p>We accept Visa, MasterCard, EasyPaisa, JazzCash, and bank transfers.
+                        </p>
+                </ul>  
+            </div>
 
- <div class="border-t border-gray-600 flex">
-   <div class="bg-gray-900 w-70 h-120 flex flex-col gap-7 px-5 py-7" >
-         <a href="AdminDashboard.html"> <div class="flex gap-2 hover:bg-red-600 rounded h-8 pt-1 px-1">
-            <i class="fa-solid fa-user-tie text-white text-xl"></i>
-            <p class="text-white font-semibold ">Dashboard</p>
-          </div>
-          </a>
-          <a href="AddProduct.html">
-          <div class="flex gap-3 hover:bg-red-600 rounded h-8 pt-1 px-1 ">
-           <i class="fa-solid fa-bag-shopping text-white text-xl"></i>
-            <p class="text-white font-semibold ">Add Product</p>
-          </div>
-          </a>
-          <a href="ViewProduct.html">
-          <div class="flex gap-3 hover:bg-red-600 rounded h-8 pt-1 px-1">
-            <i class="fa-solid fa-eye text-white text-xl"></i>
-            <p class="text-white font-semibold ">View Product</p>
-          </div>
-           </a>
-           <a href="Dashboard.html">
+             <div >
+                <h1 class="font-semibold text-xl text-gray-900">  Still Need Help?</h1>
+                <p class="text-gray-600 py-2">If your question isn't answered above, feel free to reach out to our support team:</p>
+               
+            <div class="flex gap-2 pt-3 ">
+                <img src="../assests/Images/email.webp" alt="Wishlist"
+                    class="w-6 h-5    p-1 hover:scale-105 transition-transform duration-200">
+                <p class="text-gray-600"> Email us at: <a href="" class="text-blue-600">support@gmail.com</a></p>
+            </div>
+            <div class="flex gap-1 pt-3 ">
+                <img src="../assests/Images/phone3.png" alt="Wishlist"
+                    class="w-7 h-7   p-1 hover:scale-105 transition-transform duration-200">
+                <p class="text-gray-600">Call or WhatsApp us: <b>+92 312 3456789</b></p>
+            </div>
+             <div class="flex gap-1 pt-3 ">
+                <div><i class="fa-solid fa-message text-blue-800"></i></div>
+                <p class="text-gray-600 px-2">Live chat: Available Mon–Sat, 10AM–6PM</p>
+            </div>
+            
+            </div>
 
            
-          <div class="flex gap-3 hover:bg-red-600 rounded h-8 pt-1 px-1">
-            <i class="fa-solid fa-right-from-bracket text-white text-xl"></i>
-            <p class="text-white font-semibold ">Logout</p>
-          </div>
-          </a>
-   </div>
-
-
-   <div class="flex justify-center mt-5 px-10   w-full max-[640px]:pl-8 ">
-        <div class="flex justify-center items-center gap-5 flex-col border border-gray-200 sm:w-60 sm:h-50  lg:w-full shadow-xl lg:h-30 max-[640px]:h-60 max-[640px]:w-70">
-            <h1 class=" text-3xl font-bold">View Product</h1>
-            <p class="font-semibold">No products available.
-             </p>
+                <div class="mt-5">
+                    <p class="text-gray-400">Last Updated: 11/21/2025</p>
+                </div>
+            
         </div>
-
    </div>
 
 
- </div>
 
 
 
 
 
 
-    <footer class="bg-gray-900  flex flex-wrap items-center justify-between px-6 py-    ">
+
+
+
+
+
+
+
+ <footer class="bg-gray-900  flex flex-wrap items-center justify-between px-6 py-4 mt-10   ">
         <div class="flex flex-col  gap-5 w-85 sm:justify-start">
             <h1 class="text-2xl text-white font-bold  ml-5">E-Commerece</h1>
             <p class="text-gray-400 ml-5">Your one-stop shop for the latest trends in fashion, electronics, and
@@ -117,10 +134,10 @@
             <h1 class="text-xl text-white font-bold">Quick Links</h1>
 
             <ul class="flex flex-col text-gray-300 text-sm gap-3">
-                <li><a href="index.html" class="hover:text-blue-800 transition-all duration-200">Home</a></li>
+                <li><a href="../index.html" class="hover:text-blue-800 transition-all duration-200">Home</a></li>
                 <li><a href="About.html" class="hover:text-blue-800 transition-all duration-200">About</a></li>
                 <li><a href="Contact.html" class="hover:text-blue-800 transition-all duration-200">Contact</a></li>
-                <li><a href="AdminDashboard.html" class="hover:text-blue-800 transition-all duration-200">Dashboard</a></li>
+                <li><a href="Dashboard.html" class="hover:text-blue-800 transition-all duration-200">Dashboard</a></li>
             </ul>
 
         </div>
@@ -141,29 +158,29 @@
         <div class="w-90 mt-15 lg:pl-20 sm:justify-start sm:pl-8 max-[640px]:pl-8  md:pl-8  ">
             <h1 class="text-xl text-white font-bold">Contact Us</h1>
             <div class="flex gap-1 pt-3 ">
-                <img src="Images/location1.png" alt="Wishlist"
+                <img src="../assests/Images/location1.png" alt="Wishlist"
                     class="w-7 h-7    p-1 hover:scale-105 transition-transform duration-200">
                 <p class="text-gray-300">Lahore, Pakistan</p>
             </div>
             <div class="flex gap-2 pt-3 ">
-                <img src="Images/email.webp" alt="Wishlist"
+                <img src="../assests/Images/email.webp" alt="Wishlist"
                     class="w-6 h-5    p-1 hover:scale-105 transition-transform duration-200">
                 <p class="text-gray-300">support@gmail.com</p>
             </div>
             <div class="flex gap-1 pt-3 ">
-                <img src="Images/phone3.png" alt="Wishlist"
+                <img src="../assests/Images/phone3.png" alt="Wishlist"
                     class="w-7 h-7   p-1 hover:scale-105 transition-transform duration-200">
                 <p class="text-gray-300">+92 312 3456789</p>
             </div>
 
             <div class="flex items-center space-x-3  ">
-                <img src="Images/facebook1.png" alt="Facebook"
+                <img src="../assests/Images/facebook1.png" alt="Facebook"
                     class="w-10 h-12 object-cover rounded-full p-1 hover:scale-110 transition-transform duration-300">
-                <img src="Images/instagram.png" alt="Instagram"
+                <img src="../assests/Images/instagram.png" alt="Instagram"
                     class="w-7 h-7 object-cover rounded-lg p-1 hover:scale-110 transition-transform duration-300">
-                <img src="Images/twitter.png" alt="Twitter"
+                <img src="../assests/Images/twitter.png" alt="Twitter"
                     class="w-9 h-9 object-cover rounded-full p-1 hover:scale-110 transition-transform duration-300">
-                <img src="Images/github1.png" alt="GitHub"
+                <img src="../assests/Images/github1.png" alt="GitHub"
                     class="w-8 h-8 object-cover rounded-full p-1 hover:scale-110 transition-transform duration-300">
             </div>
 
@@ -181,8 +198,9 @@
 
 
 
-    </footer>
-    </div>
-</body>
 
+
+    </footer>
+
+</body>
 </html>

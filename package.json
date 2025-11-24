@@ -13,5 +13,13 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.17",
     "tailwindcss": "^4.1.17"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehwishgullkhan9786-ui/E-Commerce.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mehwishgullkhan9786-ui/E-Commerce/issues"
+  },
+  "homepage": "https://github.com/mehwishgullkhan9786-ui/E-Commerce#readme"
 }

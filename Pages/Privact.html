@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+            <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <title>Document</title>
 </head>
 <body class="bg-gray-100">
@@ -17,7 +19,7 @@
 
 
             <div class="flex items-center gap-5">
-                <img src="Images/logo.png" alt="Logo" class="w-10 h-10 object-cover rounded-full">
+                <img src="../assests/Images/logo.png" alt="Logo" class="w-10 h-10 object-cover rounded-full">
                 <h1 class="text-2xl font-bold text-white">E-Commerce</h1>
             </div>
 
@@ -28,7 +30,7 @@
           <i class="fa-solid fa-bars text-white text-3xl" ></i>
       </button>
             <ul class="hidden md:flex flex-col md:flex-row md:items-center w-full md:w-auto mt-4 md:mt-0 gap-6 text-white text-lg">
-                <li><a href="index.html" class="hover:text-blue-800 transition-all duration-200">Home</a></li>
+                <li><a href="../index.html" class="hover:text-blue-800 transition-all duration-200">Home</a></li>
                 <li><a href="About.html" class="hover:text-blue-800 transition-all duration-200">About</a></li>
                 <li><a href="Contact.html" class="hover:text-blue-800 transition-all duration-200">Contact</a></li>
             </ul>
@@ -39,7 +41,7 @@
                     class="w-10 h-10 object-cover rounded-full bg-white p-1 hover:scale-105 transition-transform duration-200">
                 <img src="Images/viewcart.jpg" alt="Cart"
                     class="w-10 h-10 object-cover rounded-full bg-white p-1 hover:scale-105 transition-transform duration-200"> -->
-                  <a href="/CartView.html"><div> <i class=" fa-solid fa-bag-shopping text-amber-100 text-4xl sm:flex hidden"></i></div></a>
+                  <a href="CartView.html"><div> <i class=" fa-solid fa-bag-shopping text-amber-100 text-4xl sm:flex hidden"></i></div></a>
                   <a href="WishList.html">  <div>  <i class="fa-solid fa-cart-shopping text-amber-100 text-4xl"></i></div>
                   </a>
                
@@ -57,50 +59,61 @@
    <div class="w-full h-full">
          <div class="flex flex-col mt-5 justify-center items-center gap-6 w-full  ">
             <div class="w-[60%]   h-256 px-6 flex justify-start flex-col gap-5 bg-white hover:shadow-2xl  mt-2 py-5 border border-gray-100">
-            <h2 class="text-3xl  font-bold text-gray-900">Help & Support</h2>
-            <p class="text-gray-700">We're here to assist you with any questions, issues, or feedback you may have about your shopping experience on <b>E-Commerce</b></p>
+            <h2 class="text-3xl  font-bold text-gray-900">Privacy Policy</h2>
+            <p class="text-gray-700">At <b>E-Commerce</b>, your privacy is our priority. This policy outlines how we collect, use, and protect your personal information.</p>
         
             <div >
-                <h1 class="font-semibold text-xl text-gray-900"> Frequently Asked Questions</h1>
+                <h1 class="font-semibold text-xl text-gray-900">1. Information We Collect</h1>
                 <ul class="list-disc pl-6 text-gray-600 flex gap-1 flex-col mt-2">
-                     <li class="font-bold">How do I track my order?</li>
-                     <p>You can track your order in the “My Orders” section of your account. You’ll also receive email updates.
-                        </p>
-                     <li class="font-bold pt-2">What is your return policy?</li>
-                     <p>We accept returns within 7 days of delivery. Please visit our Return Policy page for details.
-                        </p>
-                     <li class="font-bold pt-2">Can I cancel my order?</li>
-                     <p>Orders can be canceled within 1 hour of placing them. After that, they may already be in the shipping process.
-                        </p>
-                        <li class="font-bold pt-2">What payment methods are accepted?</li>
-                        <p>We accept Visa, MasterCard, EasyPaisa, JazzCash, and bank transfers.
-                        </p>
+                     <li>Personal Information: Name, email, phone number, address</li>
+                     <li>Payment Information: Billing details (processed securely via third-party services).</li>
+                     <li>Usage Data: IP address, browser type, pages visited, device type.</li>
                 </ul>  
             </div>
 
              <div >
-                <h1 class="font-semibold text-xl text-gray-900">  Still Need Help?</h1>
-                <p class="text-gray-600 py-2">If your question isn't answered above, feel free to reach out to our support team:</p>
-               
-            <div class="flex gap-2 pt-3 ">
-                <img src="Images/email.webp" alt="Wishlist"
-                    class="w-6 h-5    p-1 hover:scale-105 transition-transform duration-200">
-                <p class="text-gray-600"> Email us at: <a href="" class="text-blue-600">support@gmail.com</a></p>
-            </div>
-            <div class="flex gap-1 pt-3 ">
-                <img src="Images/phone3.png" alt="Wishlist"
-                    class="w-7 h-7   p-1 hover:scale-105 transition-transform duration-200">
-                <p class="text-gray-600">Call or WhatsApp us: <b>+92 312 3456789</b></p>
-            </div>
-             <div class="flex gap-1 pt-3 ">
-                <div><i class="fa-solid fa-message text-blue-800"></i></div>
-                <p class="text-gray-600 px-2">Live chat: Available Mon–Sat, 10AM–6PM</p>
-            </div>
-            
+                <h1 class="font-semibold text-xl text-gray-900">2. How We Use Your Information</h1>
+                <ul class="list-disc pl-6 text-gray-600 flex gap-1 flex-col mt-2">
+                     <li>To process your orders and deliver products.</li>
+                     <li>To provide customer service and support.</li>
+                     <li>To send promotional emails or updates (you can opt out).</li>
+                     <li>To improve our website, products, and services.</li>
+                </ul>  
             </div>
 
-           
-                <div class="mt-5">
+            <div  >
+                <h1 class="font-semibold text-xl text-gray-900">3. How We Use Your Information</h1>
+                <p class="text-gray-600 py-2">We implement strong security measures to protect your data. However, no method of transmission over the internet is 100% secure. </p>
+            </div>
+
+
+             <div >
+                <h1 class="font-semibold text-xl text-gray-900">4. Sharing of Information</h1>
+                <p class="text-gray-600 py-2">We never sell your personal information. We may share data with trusted partners who assist in operating our website and delivering your orders. </p>
+                </div>
+
+                 <div >
+                <h1 class="font-semibold text-xl text-gray-900">5. Your Rights</h1>
+                 <ul class="list-disc pl-6 text-gray-600 flex gap-1 flex-col mt-2">
+                     <li>You have the right to access, correct, or delete your personal data.</li>
+                     <li>You can unsubscribe from marketing emails at any time.</li>
+                      </ul>  
+                </div>
+
+                <div >   
+                <h1 class="font-semibold text-xl text-gray-900">6. Changes to This Policy</h1>
+                <p class="text-gray-600 py-2">We may update this Privacy Policy from time to time. Updates will be posted on this page with a revised "Last Updated" date. </p>
+                </div>
+
+              <div >   
+                <h1 class="font-semibold text-xl text-gray-900">7. Contact Us</h1>
+                <p class="text-gray-600 py-2">
+                If you have any questions about this policy, please contact us at 
+                <a href="" class="text-blue-600">support@gmail.com</a>
+                 or call <b>+923123456789.</b>
+                     </p>
+                </div>
+                <div>
                     <p class="text-gray-400">Last Updated: 11/21/2025</p>
                 </div>
             
@@ -132,7 +145,7 @@
             <h1 class="text-xl text-white font-bold">Quick Links</h1>
 
             <ul class="flex flex-col text-gray-300 text-sm gap-3">
-                <li><a href="index.html" class="hover:text-blue-800 transition-all duration-200">Home</a></li>
+                <li><a href="../index.html" class="hover:text-blue-800 transition-all duration-200">Home</a></li>
                 <li><a href="About.html" class="hover:text-blue-800 transition-all duration-200">About</a></li>
                 <li><a href="Contact.html" class="hover:text-blue-800 transition-all duration-200">Contact</a></li>
                 <li><a href="Dashboard.html" class="hover:text-blue-800 transition-all duration-200">Dashboard</a></li>
@@ -156,29 +169,29 @@
         <div class="w-90 mt-15 lg:pl-20 sm:justify-start sm:pl-8 max-[640px]:pl-8  md:pl-8  ">
             <h1 class="text-xl text-white font-bold">Contact Us</h1>
             <div class="flex gap-1 pt-3 ">
-                <img src="Images/location1.png" alt="Wishlist"
+                <img src="../assests/Images/location1.png" alt="Wishlist"
                     class="w-7 h-7    p-1 hover:scale-105 transition-transform duration-200">
                 <p class="text-gray-300">Lahore, Pakistan</p>
             </div>
             <div class="flex gap-2 pt-3 ">
-                <img src="Images/email.webp" alt="Wishlist"
+                <img src="../assests/Images/email.webp" alt="Wishlist"
                     class="w-6 h-5    p-1 hover:scale-105 transition-transform duration-200">
                 <p class="text-gray-300">support@gmail.com</p>
             </div>
             <div class="flex gap-1 pt-3 ">
-                <img src="Images/phone3.png" alt="Wishlist"
+                <img src="../assests/Images/phone3.png" alt="Wishlist"
                     class="w-7 h-7   p-1 hover:scale-105 transition-transform duration-200">
                 <p class="text-gray-300">+92 312 3456789</p>
             </div>
 
             <div class="flex items-center space-x-3  ">
-                <img src="Images/facebook1.png" alt="Facebook"
+                <img src="../assests/Images/facebook1.png" alt="Facebook"
                     class="w-10 h-12 object-cover rounded-full p-1 hover:scale-110 transition-transform duration-300">
-                <img src="Images/instagram.png" alt="Instagram"
+                <img src="../assests/Images/instagram.png" alt="Instagram"
                     class="w-7 h-7 object-cover rounded-lg p-1 hover:scale-110 transition-transform duration-300">
-                <img src="Images/twitter.png" alt="Twitter"
+                <img src="../assests/Images/twitter.png" alt="Twitter"
                     class="w-9 h-9 object-cover rounded-full p-1 hover:scale-110 transition-transform duration-300">
-                <img src="Images/github1.png" alt="GitHub"
+                <img src="../assests/Images/github1.png" alt="GitHub"
                     class="w-8 h-8 object-cover rounded-full p-1 hover:scale-110 transition-transform duration-300">
             </div>
 
