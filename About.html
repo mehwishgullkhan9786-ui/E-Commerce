@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>E-Commerce</title>
+</head>
+
+<body>
+
+   <nav class=" bg-amber-300 lg:w-full lg:h-21 pt-1 sm:bg-amber-700 md:bg-red-600 lg:bg-gray-900 max-[430px]:w-full ">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-6 py-4">
+
+
+            <div class="flex items-center gap-5">
+                <img src="Images/logo.png" alt="Logo" class="w-10 h-10 object-cover rounded-full">
+                <h1 class="text-2xl font-bold text-white">E-Commerce</h1>
+            </div>
+
+            <!-- <button id="menu-btn" class="text-white text-3xl md:hidden focus:outline-none">
+        ☰
+      </button> -->
+       <button id="menu-btn" class=" md:hidden focus:outline-none" >
+          <i class="fa-solid fa-bars text-white text-3xl" ></i>
+      </button>
+            <ul class="hidden md:flex flex-col md:flex-row md:items-center w-full md:w-auto mt-4 md:mt-0 gap-6 text-white text-lg">
+                <li><a href="index.html" class="hover:text-blue-800 transition-all duration-200">Home</a></li>
+                <li><a href="About.html" class="hover:text-blue-800 transition-all duration-200">About</a></li>
+                <li><a href="Contact.html" class="hover:text-blue-800 transition-all duration-200">Contact</a></li>
+            </ul>
+
+          
+            <div class="flex items-center gap-5 md:mt-0  max-[640px]:hidden " >  <!-- agr hiiden bad ma lgaya to os sy nichy py apply hoga -->
+                <!-- <img src="Images/wish1.webp" alt="Wishlist"
+                    class="w-10 h-10 object-cover rounded-full bg-white p-1 hover:scale-105 transition-transform duration-200">
+                <img src="Images/viewcart.jpg" alt="Cart"
+                    class="w-10 h-10 object-cover rounded-full bg-white p-1 hover:scale-105 transition-transform duration-200"> -->
+                    <a href="/CartView.html"><div> <i class=" fa-solid fa-bag-shopping text-amber-100 text-4xl sm:flex hidden"></i></div></a>
+                  <a href="WishList.html">  <div>  <i class="fa-solid fa-cart-shopping text-amber-100 text-4xl"></i></div>
+                  </a>
+               
+                 <a href="Dashboard.html">
+                        <button
+                    class="bg-blue-800 text-white  px-5 py-3 rounded-xl hover:bg-blue-600 hover:text-white transition-colors duration-200">
+                    Admin Dashboard
+                </button>
+                    </a>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+    <div class="flex justify-center items-center flex-col w-full">
+        <div class="flex justify-center items-center flex-col w-[80%] mt-12 max-[640px]:justify-center">
+            <div class="flex flex-row gap-3 max-[416px]:flex-col">
+                <h1 class=" text-4xl font-bold">
+                    About
+                </h1>
+                <h1 class="text-4xl font-bold text-blue-800">E-Commerce</h1>
+            </div>
+
+            <p class="mt-8 text-xl w-full text-center ">
+                Welcome to E-Commerce, your number one destination for high-quality products. We’re dedicated to giving
+                you the best shopping experience, focusing on reliability, customer service, and uniqueness.
+            </p>
+        </div>
+
+        <div class="flex justify-center items-stretch flex-wrap flex-row w-[80%] mt-10 gap-5  ">
+            <div class="bg-gray-800 flex-1 w-full min-w-[250px] rounded-xl lg:h-45 p-5 pl-10 gap-10  md:h-60  sm:h-70  max-[640px]:h-auto   ">
+                <h1 class="text-blue-800 text-3xl font-bold">Our Mission</h1>
+                <p class="text-white mt-5">
+                    Our mission is to provide top-quality products at competitive prices while ensuring the best
+                    customer experience. We strive to be your most trusted online shopping destination.
+                </p>
+            </div>
+            <div class="bg-gray-800 flex-1 w-full min-w-[250px] rounded-xl lg:h-45 p-5 pl-10 gap-10  md:h-60 sm:h-70 max-[640px]:h-auto ">
+                <h1 class="text-blue-800 text-3xl font-bold">Our Vision</h1>
+                <p class="text-white mt-5">We aim to revolutionize online shopping by making it effortless, affordable,
+                    and enjoyable. Our goal is to bring the best products from around the world right to your doorstep.
+                </p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <div class="flex justify-center items-center flex-col w-full  mt-10">
+        <div class="flex justify-center items-center flex-col w-[80%] mt-5">
+            <div class="flex flex-row gap-3 max-[416px]:flex-col">
+                <h1 class=" text-4xl font-bold">
+                    Why
+                </h1>
+                <h1 class="text-4xl font-bold text-blue-800">Choose Us?</h1>
+            </div>
+
+        </div>
+
+        <div class="flex justify-center items-center w-[80%] mt-10 gap-5 max-md:flex-col ">
+            <div class="bg-gray-800 w-full  rounded-xl lg:h-40 p-5 pl-6 gap-10 text-center sm:w-full  md:h-55 sm:h-30 sm:flex-wrap max-[640px]:h-30  ">
+                <h1 class="text-blue-800 text-xl font-bold pt-2">High-Quality Products</h1>
+                <p class="text-white pt-2">
+                    We offer a carefully curated selection of premium products.
+                </p>
+            </div>
+            <div class="bg-gray-800 w-full  rounded-xl lg:h-40 p-5 pl-6 gap-10 text-center sm:w-full md:h-55 sm:flex-wrap sm:h-30 max-[640px]:h-30 ">
+                <h1 class="text-blue-800 text-xl font-bold pt-2">Fast & Secure Shipping</h1>
+                <p class="text-white pt-2">Get your orders delivered quickly and securely.</p>
+            </div>
+            <div class="bg-gray-800 w-full  rounded-xl lg:h-40 p-5 pl-6 gap-10 text-center sm:w-full md:h-55 sm:flex-wrap sm:h-30 max-[640px]:h-30  ">
+                <h1 class="text-blue-800 text-xl font-bold pt-2">Excellent Customer Support</h1>
+                <p class="text-white mt-2">Our support team is available 24/7 to assist you.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="flex flex-col h-60 max-[230px]:h-full">
+        <div class=" flex justify-center items-center flex-col text-center gap-8 mt-10 sm:justify-center md:justify-center lg:justify-center">
+            <h1 class="text-2xl font-semibold text-center">Start Shopping Now!</h1>
+            <p class="text-center w-[80%] max-[640px]:w-[80%]">Explore our wide range of products and enjoy an amazing shopping experience.</p>
+           <a href="index.html"> <button
+                class="bg-blue-600 text-white w-44 h-11  px-5 py-2 rounded-xl hover:bg-blue-800 hover:text-white font-bold transition-colors duration-200">
+                Browse Products</button></a>
+        </div>
+    </div>
+
+    <footer class="bg-gray-900  flex flex-wrap items-center justify-between px-6 py-4 mt-15 max-[230px]:h-full    ">
+        <div class="flex flex-col  gap-5 w-85 sm:justify-start">
+            <h1 class="text-2xl text-white font-bold  ml-5">E-Commerece</h1>
+            <p class="text-gray-400 ml-5">Your one-stop shop for the latest trends in fashion, electronics, and
+                lifestyle. Shop smart. Shop easy.</p>
+        </div>
+
+        <div class="flex flex-col m-8 gap-4 w-30 mt-16 sm:justify-start max-[640px]:justify-start">
+            <h1 class="text-xl text-white font-bold">Quick Links</h1>
+
+            <ul class="flex flex-col text-gray-300 text-sm gap-3">
+                <li><a href="index.html" class="hover:text-blue-800 transition-all duration-200">Home</a></li>
+                <li><a href="About.html" class="hover:text-blue-800 transition-all duration-200">About</a></li>
+                <li><a href="Contact.html" class="hover:text-blue-800 transition-all duration-200">Contact</a></li>
+                <li><a href="Dashboard.html" class="hover:text-blue-800 transition-all duration-200">Dashboard</a></li>
+            </ul>
+
+        </div>
+
+
+        <div class="flex flex-col m-8 gap-4 w-60 lg:pl-15 sm:justify-start sm:pl-0 max-[640px]:pl-0  md:pl-0 ">
+            <h1 class="text-xl text-white font-bold">Cutomer Policy</h1>
+
+            <ul class="flex flex-col gap-3 text-gray-300 text-sm ">
+                <li><a href="Privact.html" class="hover:text-blue-800 transition-all duration-200">Privacy Policy</a></li>
+                <li><a href="Term&Condition.html" class="hover:text-blue-800 transition-all duration-200">Terms & Conditions</a></li>
+                <li><a href="Help&Support.html" class="hover:text-blue-800 transition-all duration-200">Help & Support</a></li>
+            </ul>
+
+        </div>
+
+
+        <div class="w-90 mt-15 lg:pl-20 sm:justify-start sm:pl-8 max-[640px]:pl-8  md:pl-8  ">
+            <h1 class="text-xl text-white font-bold">Contact Us</h1>
+            <div class="flex gap-1 pt-3 ">
+                <img src="Images/location1.png" alt="Wishlist"
+                    class="w-7 h-7    p-1 hover:scale-105 transition-transform duration-200">
+                <p class="text-gray-300">Lahore, Pakistan</p>
+            </div>
+            <div class="flex gap-2 pt-3 ">
+                <img src="Images/email.webp" alt="Wishlist"
+                    class="w-6 h-5    p-1 hover:scale-105 transition-transform duration-200">
+                <p class="text-gray-300">support@gmail.com</p>
+            </div>
+            <div class="flex gap-1 pt-3 ">
+                <img src="Images/phone3.png" alt="Wishlist"
+                    class="w-7 h-7   p-1 hover:scale-105 transition-transform duration-200">
+                <p class="text-gray-300">+92 312 3456789</p>
+            </div>
+
+            <div class="flex items-center space-x-3  ">
+                <img src="Images/facebook1.png" alt="Facebook"
+                    class="w-10 h-12 object-cover rounded-full p-1 hover:scale-110 transition-transform duration-300">
+                <img src="Images/instagram.png" alt="Instagram"
+                    class="w-7 h-7 object-cover rounded-lg p-1 hover:scale-110 transition-transform duration-300">
+                <img src="Images/twitter.png" alt="Twitter"
+                    class="w-9 h-9 object-cover rounded-full p-1 hover:scale-110 transition-transform duration-300">
+                <img src="Images/github1.png" alt="GitHub"
+                    class="w-8 h-8 object-cover rounded-full p-1 hover:scale-110 transition-transform duration-300">
+            </div>
+
+
+        </div>
+
+
+        <hr class="border-b border-gray-400 w-full mt-10">
+        <div class="flex justify-center items-center text-center w-full mt-10 mb-10">
+            <p class="  text-sm text-gray-400">© 2025 E-Commerce. All rights reserved.</p>
+
+        </div>
+
+        </div>
+
+
+
+
+
+    </footer>
+
+
+</body>
+
+</html>

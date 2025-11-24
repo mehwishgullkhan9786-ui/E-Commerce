@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>E-Commerce Navbar</title>
+
+</head>
+
+<body class="bg-gray-100">
+
+    <div class="lg:w-full lg:h-full md:w-full md:h-full sm:w-full sm:h-full">
+
+    
+
+    <nav class=" bg-amber-300 lg:w-full lg:h-21 pt-1 sm:bg-amber-700 md:bg-red-600 lg:bg-gray-900 max-[430px]:w-full ">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-6 py-4">
+
+
+            <div class="flex items-center gap-5">
+                <img src="Images/logo.png" alt="Logo" class="w-10 h-10 object-cover rounded-full">
+                <h1 class="text-2xl font-bold text-white">E-Commerce</h1>
+            </div>
+
+            <!-- <button id="menu-btn" class="text-white text-3xl md:hidden focus:outline-none">
+        ☰
+      </button> -->
+       <button id="menu-btn" class=" md:hidden focus:outline-none" >
+          <i class="fa-solid fa-bars text-white text-3xl" ></i>
+      </button>
+            <ul class="hidden md:flex flex-col md:flex-row md:items-center w-full md:w-auto mt-4 md:mt-0 gap-6 text-white text-lg">
+                <li><a href="index.html" class="hover:text-blue-800 transition-all duration-200">Home</a></li>
+                <li><a href="About.html" class="hover:text-blue-800 transition-all duration-200">About</a></li>
+                <li><a href="Contact.html" class="hover:text-blue-800 transition-all duration-200">Contact</a></li>
+            </ul>
+
+          
+            <div class="flex items-center gap-5 md:mt-0  max-[640px]:hidden " >  <!-- agr hiiden bad ma lgaya to os sy nichy py apply hoga -->
+                <!-- <img src="Images/wish1.webp" alt="Wishlist"
+                    class="w-10 h-10 object-cover rounded-full bg-white p-1 hover:scale-105 transition-transform duration-200">
+                <img src="Images/viewcart.jpg" alt="Cart"
+                    class="w-10 h-10 object-cover rounded-full bg-white p-1 hover:scale-105 transition-transform duration-200"> -->
+                   <a href="/CartView.html"><div> <i class=" fa-solid fa-bag-shopping text-amber-100 text-4xl sm:flex hidden"></i></div></a>
+                  <a href="WishList.html">  <div>  <i class="fa-solid fa-cart-shopping text-amber-100 text-4xl"></i></div>
+                  </a>
+                    <a href="AdminDashboard.html">
+                    <button
+                    class="bg-blue-800 text-white  px-5 py-3 rounded-xl hover:bg-blue-600 hover:text-white transition-colors duration-200">
+                    Admin Dashboard
+                </button>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+ <div class="border-t border-gray-600 flex">
+   <div class="bg-gray-900 w-70 h-120 flex flex-col gap-7 px-5 py-7" >
+         <a href="AdminDashboard.html"> <div class="flex gap-2 hover:bg-red-600 rounded h-8 pt-1 px-1">
+            <i class="fa-solid fa-user-tie text-white text-xl"></i>
+            <p class="text-white font-semibold ">Dashboard</p>
+          </div>
+          </a>
+          <a href="AddProduct.html">
+          <div class="flex gap-3 hover:bg-red-600 rounded h-8 pt-1 px-1 ">
+           <i class="fa-solid fa-bag-shopping text-white text-xl"></i>
+            <p class="text-white font-semibold ">Add Product</p>
+          </div>
+          </a>
+          <a href="ViewProduct.html">
+          <div class="flex gap-3 hover:bg-red-600 rounded h-8 pt-1 px-1">
+            <i class="fa-solid fa-eye text-white text-xl"></i>
+            <p class="text-white font-semibold ">View Product</p>
+          </div>
+           </a>
+           <a href="Dashboard.html">
+
+           
+          <div class="flex gap-3 hover:bg-red-600 rounded h-8 pt-1 px-1">
+            <i class="fa-solid fa-right-from-bracket text-white text-xl"></i>
+            <p class="text-white font-semibold ">Logout</p>
+          </div>
+          </a>
+   </div>
+
+
+   <div class="flex justify-center mt-5 px-10   w-full max-[640px]:pl-8 ">
+        <div class="flex justify-center items-center gap-5 flex-col border border-gray-200 sm:w-60 sm:h-50  lg:w-full shadow-xl lg:h-30 max-[640px]:h-60 max-[640px]:w-70">
+            <h1 class=" text-3xl font-bold">View Product</h1>
+            <p class="font-semibold">No products available.
+             </p>
+        </div>
+
+   </div>
+
+
+ </div>
+
+
+
+
+
+
+    <footer class="bg-gray-900  flex flex-wrap items-center justify-between px-6 py-    ">
+        <div class="flex flex-col  gap-5 w-85 sm:justify-start">
+            <h1 class="text-2xl text-white font-bold  ml-5">E-Commerece</h1>
+            <p class="text-gray-400 ml-5">Your one-stop shop for the latest trends in fashion, electronics, and
+                lifestyle. Shop smart. Shop easy.</p>
+        </div>
+
+        <div class="flex flex-col m-8 gap-4 w-30 mt-16 sm:justify-start max-[640px]:justify-start">
+            <h1 class="text-xl text-white font-bold">Quick Links</h1>
+
+            <ul class="flex flex-col text-gray-300 text-sm gap-3">
+                <li><a href="index.html" class="hover:text-blue-800 transition-all duration-200">Home</a></li>
+                <li><a href="About.html" class="hover:text-blue-800 transition-all duration-200">About</a></li>
+                <li><a href="Contact.html" class="hover:text-blue-800 transition-all duration-200">Contact</a></li>
+                <li><a href="AdminDashboard.html" class="hover:text-blue-800 transition-all duration-200">Dashboard</a></li>
+            </ul>
+
+        </div>
+
+
+        <div class="flex flex-col m-8 gap-4 w-60 lg:pl-15 sm:justify-start sm:pl-0 max-[640px]:pl-0  md:pl-0 ">
+            <h1 class="text-xl text-white font-bold">Cutomer Policy</h1>
+
+            <ul class="flex flex-col gap-3 text-gray-300 text-sm ">
+                <li><a href="Privact.html" class="hover:text-blue-800 transition-all duration-200">Privacy Policy</a></li>
+                <li><a href="Term&Condition.html" class="hover:text-blue-800 transition-all duration-200">Terms & Conditions</a></li>
+                <li><a href="Help&Support.html" class="hover:text-blue-800 transition-all duration-200">Help & Support</a></li>
+            </ul>
+
+        </div>
+
+
+        <div class="w-90 mt-15 lg:pl-20 sm:justify-start sm:pl-8 max-[640px]:pl-8  md:pl-8  ">
+            <h1 class="text-xl text-white font-bold">Contact Us</h1>
+            <div class="flex gap-1 pt-3 ">
+                <img src="Images/location1.png" alt="Wishlist"
+                    class="w-7 h-7    p-1 hover:scale-105 transition-transform duration-200">
+                <p class="text-gray-300">Lahore, Pakistan</p>
+            </div>
+            <div class="flex gap-2 pt-3 ">
+                <img src="Images/email.webp" alt="Wishlist"
+                    class="w-6 h-5    p-1 hover:scale-105 transition-transform duration-200">
+                <p class="text-gray-300">support@gmail.com</p>
+            </div>
+            <div class="flex gap-1 pt-3 ">
+                <img src="Images/phone3.png" alt="Wishlist"
+                    class="w-7 h-7   p-1 hover:scale-105 transition-transform duration-200">
+                <p class="text-gray-300">+92 312 3456789</p>
+            </div>
+
+            <div class="flex items-center space-x-3  ">
+                <img src="Images/facebook1.png" alt="Facebook"
+                    class="w-10 h-12 object-cover rounded-full p-1 hover:scale-110 transition-transform duration-300">
+                <img src="Images/instagram.png" alt="Instagram"
+                    class="w-7 h-7 object-cover rounded-lg p-1 hover:scale-110 transition-transform duration-300">
+                <img src="Images/twitter.png" alt="Twitter"
+                    class="w-9 h-9 object-cover rounded-full p-1 hover:scale-110 transition-transform duration-300">
+                <img src="Images/github1.png" alt="GitHub"
+                    class="w-8 h-8 object-cover rounded-full p-1 hover:scale-110 transition-transform duration-300">
+            </div>
+
+
+        </div>
+
+
+        <hr class="border-b border-gray-400 w-full mt-10">
+        <div class="flex justify-center items-center text-center w-full mt-10 mb-10">
+            <p class="  text-sm text-gray-400">© 2025 E-Commerce. All rights reserved.</p>
+
+        </div>
+
+        </div>
+
+
+
+    </footer>
+    </div>
+</body>
+
+</html>
