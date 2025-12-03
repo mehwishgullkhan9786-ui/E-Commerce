@@ -62,33 +62,38 @@
 
 
  <div class="border-t border-gray-600 flex">
-   <div class="bg-gray-900 w-70 h-120 flex flex-col gap-7 px-5 py-7" >
-         <a href="./AdminDashboard.html"> <div class="flex gap-2 hover:bg-red-600 rounded h-8 pt-1 px-1">
-            <i class="fa-solid fa-user-tie text-white text-xl"></i>
-            <p class="text-white font-semibold ">Dashboard</p>
-          </div>
-          </a>
-          <a href="./AddProduct.html">
-          <div class="flex gap-3 hover:bg-red-600 rounded h-8 pt-1 px-1 ">
-           <i class="fa-solid fa-bag-shopping text-white text-xl"></i>
-            <p class="text-white font-semibold ">Add Product</p>
-          </div>
-          </a>
-          <a href="./ViewProduct.html">
-          <div class="flex gap-3 hover:bg-red-600 rounded h-8 pt-1 px-1">
-            <i class="fa-solid fa-eye text-white text-xl"></i>
-            <p class="text-white font-semibold ">View Product</p>
-          </div>
-           </a>
-           <a href="./Dashboard.html">
+   <div class="bg-gray-900 w-70 h-auto flex-col gap-7 px-5 py-7 hidden md:flex">
 
-           
-          <div class="flex gap-3 hover:bg-red-600 rounded h-8 pt-1 px-1">
+    <a href="./AdminDashboard.html">
+        <div class="flex gap-2 hover:bg-red-600 rounded h-8 pt-1 px-1">
+            <i class="fa-solid fa-user-tie text-white text-xl"></i>
+            <p class="text-white font-semibold">Dashboard</p>
+        </div>
+    </a>
+
+    <a href="./AddProduct.html">
+        <div class="flex gap-3 hover:bg-red-600 rounded h-8 pt-1 px-1">
+            <i class="fa-solid fa-bag-shopping text-white text-xl"></i>
+            <p class="text-white font-semibold">Add Product</p>
+        </div>
+    </a>
+
+    <a href="./ViewProduct.html">
+        <div class="flex gap-3 hover:bg-red-600 rounded h-8 pt-1 px-1">
+            <i class="fa-solid fa-eye text-white text-xl"></i>
+            <p class="text-white font-semibold">View Product</p>
+        </div>
+    </a>
+
+    <a href="./Dashboard.html">
+        <div class="flex gap-3 hover:bg-red-600 rounded h-8 pt-1 px-1">
             <i class="fa-solid fa-right-from-bracket text-white text-xl"></i>
-            <p class="text-white font-semibold ">Logout</p>
-          </div>
-          </a>
-   </div>
+            <p class="text-white font-semibold">Logout</p>
+        </div>
+    </a>
+
+</div>
+
 
 
    <!-- <div class="flex justify-center mt-5 px-10   w-full max-[640px]:pl-8 ">
@@ -100,8 +105,19 @@
 
    </div> -->
 
-     <div class="flex justify-center items-center w-[90%] ml-5 shadow-2xl p-10 flex-col bg-white max-[640px]:w-full ">
-    <table class="border-2 border-gray-300 w-full bg-white border-collapse " >
+    <div class="flex justify-center items-center lg:w-[90%] md:w-[70%] lg:mb-1 md:mb-5 sm:mb-5 max-[640px]:mb-3 
+            sm:w-full  lg:ml-5 lg:mr-5 md:ml-15 md:mr-15  shadow-2xl p-10 flex-col bg-white max-[640px]:w-full ">
+
+    <div class="overflow-x-auto 
+            lg:w-full 
+            md:w-[97%]  
+            sm:w-[95%] sm:ml-5
+            max-[640px]:w-[85%] 
+            max-[480px]:w-[85%] 
+            mx-auto">
+        
+    <table class="border-2 border-gray-300 bg-white border-collapse ">
+
         <thead>
             <tr class="bg-gray-300 h-12">
                 <th class="px-4 py-2 text-center border border-gray-300">Image</th>
@@ -112,10 +128,11 @@
                 <th class="px-4 py-2 text-center border border-gray-300">Actions</th>
             </tr>
         </thead>
+
         <tbody>
             <tr class="border-b border-gray-200">
                 <td class="px-4 py-4 text-center border border-gray-300">
-                    <img src="./../assests/Images/foldsac.png" alt="Fjallraven - Foldsac" class="w-16 h-16 object-cover rounded">
+                    <img src="./../assests/Images/foldsac.png" class="w-16 h-16 object-cover rounded">
                 </td>
                 <td class="px-4 py-4 text-center border border-gray-300">Fjallraven - Foldsac</td>
                 <td class="px-4 py-4 text-center border border-gray-300">$109.95</td>
@@ -128,13 +145,12 @@
 
             <tr class="border-b border-gray-200">
                 <td class="px-4 py-4 text-center border border-gray-300">
-                    <img src="./../assests/Images/shirt.png" alt="Mens Casual Premium" class="w-16 h-16 object-cover rounded">
+                    <img src="./../assests/Images/shirt.png" class="w-16 h-16 object-cover rounded">
                 </td>
                 <td class="px-4 py-4 text-center border border-gray-300">Mens Casual Premium</td>
                 <td class="px-4 py-4 text-center border border-gray-300">$22.30</td>
                 <td class="px-4 py-4 text-center border border-gray-300">This is a beautiful Mens casual premium Shirt</td>
                 <td class="px-4 py-4 text-center border border-gray-300">Clothing</td>
-
                 <td class="px-4 py-4 text-center border border-gray-300">
                     <button class="bg-red-600 h-8 w-20 text-white rounded hover:bg-red-700">Remove</button>
                 </td>
@@ -142,11 +158,11 @@
 
             <tr>
                 <td class="px-4 py-4 text-center border border-gray-300">
-                    <img src="./../assests/Images/jacket.png" alt="Mens Cotton Jacket" class="w-16 h-16 object-cover rounded">
+                    <img src="./../assests/Images/jacket.png" class="w-16 h-16 object-cover rounded">
                 </td>
                 <td class="px-4 py-4 text-center border border-gray-300">Mens Cotton Jacket</td>
                 <td class="px-4 py-4 text-center border border-gray-300">$55.99</td>
-                 <td class="px-4 py-4 text-center border border-gray-300">This is a beautiful Jacket</td>
+                <td class="px-4 py-4 text-center border border-gray-300">This is a beautiful Jacket</td>
                 <td class="px-4 py-4 text-center border border-gray-300">Clothing</td>
                 <td class="px-4 py-4 text-center border border-gray-300">
                     <button class="bg-red-600 h-8 w-20 text-white rounded hover:bg-red-700">Remove</button>
@@ -154,7 +170,10 @@
             </tr>
         </tbody>
     </table>
-    </div>
+</div>
+
+</div>
+
 
 
 

@@ -10,41 +10,37 @@
     <title>E-Commerce</title>
 </head>
 <body>
-    <nav class="bg-gray-900 w-full h-21 pt-1 ">
+   <nav class=" bg-amber-300 lg:w-full lg:h-21 pt-1 sm:bg-amber-700 md:bg-red-600 lg:bg-gray-900 max-[430px]:w-full ">
         <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-6 py-4">
 
 
             <div class="flex items-center gap-5">
-                <img src="./../assests/Images/logo.png" alt="Logo" class="w-10 h-10 object-cover rounded-full">
+                <img src="../assests/Images/logo.png" alt="Logo" class="w-10 h-10 object-cover rounded-full">
                 <h1 class="text-2xl font-bold text-white">E-Commerce</h1>
             </div>
 
-
-           <!-- <button id="menu-btn" class="text-white text-3xl md:hidden focus:outline-none">
+            <!-- <button id="menu-btn" class="text-white text-3xl md:hidden focus:outline-none">
         ☰
       </button> -->
        <button id="menu-btn" class=" md:hidden focus:outline-none" >
           <i class="fa-solid fa-bars text-white text-3xl" ></i>
       </button>
             <ul class="hidden md:flex flex-col md:flex-row md:items-center w-full md:w-auto mt-4 md:mt-0 gap-6 text-white text-lg">
-                <li><a href="./../index.html" class="hover:text-blue-800 transition-all duration-200">Home</a></li>
+                <li><a href="../index.html" class="hover:text-blue-800 transition-all duration-200">Home</a></li>
                 <li><a href="./About.html" class="hover:text-blue-800 transition-all duration-200">About</a></li>
                 <li><a href="./Contact.html" class="hover:text-blue-800 transition-all duration-200">Contact</a></li>
             </ul>
 
-
-
-
-            <div class="flex items-center gap-5">
+          
+            <div class="flex items-center gap-5 md:mt-0  max-[640px]:hidden " >  <!-- agr hiiden bad ma lgaya to os sy nichy py apply hoga -->
                 <!-- <img src="Images/wish1.webp" alt="Wishlist"
+                    class="w-10 h-10 object-cover rounded-full bg-white p-1 hover:scale-105 transition-transform duration-200">
+                <img src="Images/viewcart.jpg" alt="Cart"
                     class="w-10 h-10 object-cover rounded-full bg-white p-1 hover:scale-105 transition-transform duration-200"> -->
-                <!-- <img src="Images/viewcart.jpg" alt="Cart"
-                    class="w-10 h-10 object-cover rounded-full bg-white p-1 hover:scale-105 transition-transform duration-200"> -->
-                   <a href="./WishList.html"> <div> <i class=" fa-solid fa-bag-shopping text-amber-100 text-4xl"></i></div>
-                   </a>
-                   <a href="./CartView.html">
-                        <div>  <i class="fa-solid fa-cart-shopping text-amber-100 text-4xl"></i></div>
-                     </a>   
+                    <a href="./CartView.html"><div> <i class=" fa-solid fa-bag-shopping text-amber-100 text-4xl sm:flex hidden"></i></div></a>
+                  <a href="./WishList.html">  <div>  <i class="fa-solid fa-cart-shopping text-amber-100 text-4xl"></i></div>
+                  </a>
+               
                  <a href="./Dashboard.html">
                         <button
                     class="bg-blue-800 text-white  px-5 py-3 rounded-xl hover:bg-blue-600 hover:text-white transition-colors duration-200">
@@ -56,8 +52,9 @@
         </div>
     </nav>
 
+
    <div class="flex justify-center items-center h-150">
-     <div class="flex justify-center items-center w-[30%] flex-col  rounded-2xl mt-25 shadow-2xl h-80 bg-white">
+     <div class="flex justify-center items-center lg:w-[30%] flex-col sm:w-[40%] max-[640px]:w-[60%]  rounded-2xl mt-25 shadow-2xl h-80 bg-white">
         <h1 class="text-3xl font-bold">Login</h1>
 
      <form action="" class=" flex flex-col mt-3 text-left w-[80%]">
